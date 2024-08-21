@@ -15,7 +15,19 @@ class ViewController: UIViewController {
         var a = 10
         var b = 20
         swapTwoNumbers(a:&a,b:&b)
+
+        loadMessage()
+        printHelloWorldMessage()
+        func printHelloWorldMessage(){
+            print("Hello world from ViewDidLoad")
+        }
     }
+    
+    
+    func loadMessage(){
+        print("Loading.........")
+    }
+    
 
     func swapTwoNumbers(a:inout Int,b:inout Int){
         var temp = a
