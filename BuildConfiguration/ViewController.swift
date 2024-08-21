@@ -12,8 +12,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        var a = 10
+        var b = 20
+        swapTwoNumbers(a:&a,b:&b)
     }
 
+    func swapTwoNumbers(a:inout Int,b:inout Int){
+        var temp = a
+        a = b
+        b = temp
+    }
 
 }
 
